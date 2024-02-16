@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <InvariantGlobalization>true</InvariantGlobalization>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.1"/>
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0"/>
+
+        <!-- Akka.net base libraries -->
+        <PackageReference Include="Akka.Cluster.Hosting" Version="1.5.15"/>
+        <PackageReference Include="Akka.Persistence.Sql.Hosting" Version="1.5.13"/>
+        <PackageReference Include="Akka.Persistence.Query.InMemory" Version="1.5.15"/>
+
+        <!-- Akka.net persistence -->
+        <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.1"/>
+    </ItemGroup>
+
+</Project>
